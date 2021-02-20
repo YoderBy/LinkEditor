@@ -30,8 +30,8 @@
     </div>
     <div class = "outputs">
         <button onclick='takeAll()'>take'em!</button>
-        <h3 id = "output">Click on this text!
-        </h3>
+        <div class = "display"><code id = "output" style = "margin: 20px;" >This shall be GLORIUOS!
+        </code></div>
     </div>
 </div>
 </body>
@@ -46,6 +46,7 @@ function takeAll(){
     for(var i = 0; i < 4; i++){
         All_data = All_data + "  " + data[i];
     }
-    document.getElementById("output").innerHTML = All_data;
+    var htmlPage = '<!DOCTYPE html> <html> <head> </head> <meta property="og:title" content="'+data[2]+ '"> <meta property="og:description" content="'+ data[0] +'"> <meta property="og:image" content="'+data[1] +'"> <body> <meta http-equiv="refresh" content="0.01; URL='+ data[3]+'"/> The content of the document...... </body> </html>';
+    document.getElementById("output").innerText = htmlPage;
 }
 </script>
