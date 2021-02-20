@@ -13,5 +13,21 @@ body {
     margin: 20px;
     padding: 20px;
   }
+.inputs {
+    display: flex;
+    padding: 20px;
+}
+.data-block{
+    margin:5px;
 
+}
+.central {
+    margin-left: 25%;
+    width: 50%;
+    background-color: wheat;
+}
+
+.outputs{
+    padding:5%;
+}
 

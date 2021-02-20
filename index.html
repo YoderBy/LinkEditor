@@ -5,10 +5,47 @@
     <title>Link Editor</title>
 </head>
 <body>
-<h1 class = "city">
-    Link Editor 
-</h1>
-
+<div class = "central">
+    <h1 class = "city">
+        Link Editor 
+    </h1>
+    <div class = "inputs">    
+        <div class = "data-block">
+        Insert Description Here
+        <input type="text" id="DescriptionInput" name="fname" value = "Description"><br><br>
+      </div>
+      <div class = "data-block">
+        Insert URL Here
+        <input type="text" id="URLInput" name="fname" value = "URL"><br><br>
+      </div>
+      <div class = "data-block">
+        Insert Title Here
+        <input type="text" id="TitleInput" name="fname" value = "Title"><br><br>
+      </div>    
+      <div class = "data-block">
+        Insert image URL Here
+        <input type="text" id="ImageInput" name="fname" value = "Image URL"><br><br>>
+      </div>
+      
+    </div>
+    <div class = "outputs">
+        <button onclick='takeAll()'>take'em!</button>
+        <h3 id = "output">Click on this text!
+        </h3>
+    </div>
+</div>
 </body>
-
-</html>
+<script> 
+function takeAll(){
+    var All_data = "";
+    var data = [];
+    data.push(document.getElementById('DescriptionInput').value);
+    data.push(document.getElementById('ImageInput').value);
+    data.push(document.getElementById('TitleInput').value);
+    data.push(document.getElementById('URLInput').value);
+    for(var i = 0; i < 4; i++){
+        All_data = All_data + "  " + data[i];
+    }
+    document.getElementById("output").innerHTML = All_data;
+}
+</script>
