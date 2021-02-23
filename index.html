@@ -46,7 +46,7 @@ function takeAll(){
     for(var i = 0; i < 4; i++){
         All_data = All_data + "  " + data[i];
     }
-    var htmlPage = '<!DOCTYPE html> <html> <head> </head> <meta property="og:title" content="'+data[2]+ '"> <meta property="og:description" content="'+ data[0] +'"> <meta property="og:image" content="'+data[1] +'"> <body> <meta http-equiv="refresh" content="0.01; URL='+ data[3]+'"/> The content of the document...... </body> </html>';
+    var htmlPage = '<!DOCTYPE html> <html> <head> </head><title></title> <link rel="apple-touch-icon-precomposed" href=""/> <meta property="og:title" content="'+data[2]+ '"> <meta property="og:description" content="'+ data[0] +'"> <meta property="og:image" content="'+data[1] +'"> <body> <meta http-equiv="refresh" content="0.01; URL='+ data[3]+'"/> The content of the document...... </body> </html>';
     document.getElementById("output").innerText = htmlPage;
 }
 </script>
