@@ -1,6 +1,5 @@
 /* Basic Style */
 body {
-  direction:rtl;
   background: #fff;
   color: #333;
   font-family: Lato, sans-serif;
@@ -16,9 +15,6 @@ ul {
 }
 li * {
   float: left;
-}
-h3{
-text-align:center;
 }
 li, h3 {
   clear:both;
