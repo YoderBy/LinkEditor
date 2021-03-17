@@ -1,6 +1,6 @@
 /* Basic Style */
 body {
-  direction: rtl;
+  direction:rtl;
   background: #fff;
   color: #333;
   font-family: Lato, sans-serif;
@@ -19,7 +19,7 @@ li * {
 }
 li, h3 {
   clear:both;
-  text-align: right;
+  text-align: center;
   list-style:none;
 }
 input, button {
